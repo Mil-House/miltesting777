@@ -95,6 +95,17 @@
     }
 }
 
+@media (max-width: 300px)
+{
+    .animate .fa {
+        font-size: 3.5rem;
+    }
+
+    .animate {
+        font-size: 3.2rem; /*3.8rem*/
+    }
+}
+
 /*======== Loader ... ========*/
 
 

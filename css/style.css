@@ -95,6 +95,17 @@
     }
 }
 
+@media (max-width: 300px)
+{
+    .animate .fa {
+        font-size: 3.5rem;
+    }
+
+    .animate {
+        font-size: 3.2rem; /*3.8rem*/
+    }
+}
+
 
 /*===============================================
 .loader_bg {
@@ -372,9 +383,9 @@ body {
         font-size: 6.6rem; /*4.4 rem*/
     }
 
-    .btitle-bsub-bheading {
-        margin-left: 2rem; /*2rem*/
-    }
+    /*.btitle-bsub-bheading {
+        margin-left: 2rem;
+    }*/
 
     .arrowposition {
         padding-top: 100px;
@@ -1318,9 +1329,18 @@ body {
         margin-bottom: 0.5rem;
     }
 
+    .hsubtxtbr{display: block;}
+
     .mobsubhead {
-        font-size: 1.6rem;
+        display: inline-block;
+        font-size: 1.8rem;
         font-weight: 500;
+
+        box-shadow: rgba(100, 100, 100, 0.15) 0px 2px 8px;
+        border: 2px solid rgba( 255, 255, 255, 0.18 );
+        padding: 2px 6px;
+        margin-left: 2px;
+        border-radius: 0.6rem;
     }
     
     .mobcard-mobtext {
@@ -1395,7 +1415,69 @@ body {
     }*/
 
     .mobgrid {
-        grid-gap: 3rem;
+        grid-gap: 2rem;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .mobcard-mobhead {font-size: 1.85rem;}
+
+    .hsubtxtbr{display: none;}
+
+    .mobsubhead {
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 2px 6px;
+    }
+
+    .mobcard-mobtext {
+        font-size: 1.4rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .mobcard-butn {padding: 0.7rem;}
+
+    .atxtdec .mobcard-butn b {
+        position: relative; 
+        font-size: 1.9rem;
+        bottom: 3px;
+    }
+}
+
+@media (max-width: 319px)
+{
+    .services {
+        padding: 60px 10px;
+    }
+
+    .mobgrid {
+        display: block;
+        width: 100%;
+    }
+
+    .mobgrid-mobitem {margin-bottom: 20px;}
+    .mobgrid-mobitem:nth-child(6) {margin-bottom: 0px;}
+
+    .mobcard-mobhead {font-size: 1.7rem;}
+    .hsubtxtbr{display: none;}
+
+    .mobsubhead {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 2px 3px;
+    }
+
+    .mobcard-mobtext {
+        font-size: 1.3rem;
+        /*margin-bottom: 1.4rem;*/
+    }
+
+    .mobcard-butn {padding: 0.6rem;}
+    .atxtdec .mobcard-butn b {
+        position: relative;
+        font-size: 1.8rem;
+        bottom: 3px;
     }
 }
 
@@ -1792,8 +1874,9 @@ table tr:nth-child(even) {
     
 @media screen and (max-width: 768px) {
     .cell {
-    padding: 4px 16px; /*2px 16px*/
-    display: block; 
+        font-size: 1.8rem;
+        padding: 4px 16px; /*2px 16px*/
+        display: block; 
     } 
 }
 
@@ -1971,6 +2054,7 @@ table tr:nth-child(even) {
 }
 
 .phnum {
+    display: inline-block;
     color: #808080;
     letter-spacing: 1px;
     font-weight: 500;
@@ -2003,7 +2087,7 @@ table tr:nth-child(even) {
 }
 
 .skillcards {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -2015,7 +2099,7 @@ table tr:nth-child(even) {
     border-radius: 8px;
     padding: 30px;
     margin: 2rem 0; /*margin-bottom*/
-    max-width: 400px;
+    max-width: 100%;
     background-color: #fff;
     background-image: url("https://Mil-House.github.io/Mil-House/img/stacked-waves-haikei2.svg"); /*blob-scene...*/
     background-size: cover;
@@ -2035,6 +2119,11 @@ table tr:nth-child(even) {
 .skillcard.corange {
     border-top: 5px solid hsl(34, 97%, 64%);
 }
+
+.skillcard.cor { /*Aded 11.01.2022*/
+    margin: 0;
+}
+
 /*
 .skillcard.corange.cor {
     border-top: 5px solid rgba(151, 122, 255);
@@ -2044,6 +2133,7 @@ table tr:nth-child(even) {
     border-top: 5px solid rgba(151, 122, 255);
 }
 */
+
 .skillcard.cblue {
     border-top: 5px solid hsl(212, 86%, 64%);
     margin: 0;
@@ -2142,6 +2232,12 @@ table tr:nth-child(even) {
 }
 */
 
+@media (max-width: 310px)
+{
+    .skillcard {padding: 20px;}
+    .phnum a {font-size: 1.6rem;}
+}
+
 @media (max-width: 1199px)
 {
     .skillcard.corange.cor {
@@ -2149,10 +2245,15 @@ table tr:nth-child(even) {
     }
 }
 
-@media only screen and (min-width: 1200px)
+@media only screen and (min-width: 1450px) /*1200px*/
 {
     .skillcards {
         flex-direction: row;
+        display: flex;
+    }
+
+    .skillcard {
+        max-width: 400px;
     }
 
     /* .skillcard {

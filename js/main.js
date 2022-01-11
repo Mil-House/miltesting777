@@ -83,8 +83,8 @@ function langmenuToggle(){
 }
 
 
-// smooth scroll by JQuery
-$('.nav-item a, .readmore a').on('click', function (e) {
+// smooth scroll by JQuery  //.nav-item a
+$('.smlink a').on('click', function (e) {
     if (this.hash !== '') {
         e.preventDefault();
 

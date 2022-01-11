@@ -202,3 +202,8 @@ footer .fcontainer .sec p {
         display: block;
     }
 }
+
+@media (max-width: 300px)
+{
+    footer .fcontainer .sec p {padding-right: 0px;}
+}
