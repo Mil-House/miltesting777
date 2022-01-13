@@ -307,7 +307,7 @@ section {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
-    color: #111;
+    color: #2a2c38; /*#111*/
 }
 
 .heading h2 {
@@ -379,7 +379,8 @@ section {
 }
 
 .progrestxt {
-    font-size: 2.2rem;
+    font-size: 1.96rem; /*2.2rem*/
+    color: #22232e;
 }
 
 .subprogrestxt {
@@ -476,6 +477,7 @@ section {
 
 .card-w .card .card__text {
     text-align: center;
+    color: #242630;
     font-size: 1.76rem; /*1.64rem*/
     letter-spacing: 1px;
 }

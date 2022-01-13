@@ -1874,10 +1874,14 @@ table tr:nth-child(even) {
     
 @media screen and (max-width: 768px) {
     .cell {
-        font-size: 1.8rem;
         padding: 4px 16px; /*2px 16px*/
         display: block; 
     } 
+}
+
+@media (orientation: portrait) and (max-width: 768px)
+{
+    .cell {font-size: 1.8rem;}
 }
 
 .mobiletable .celltbstatus {

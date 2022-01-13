@@ -726,7 +726,7 @@ header {
     
     .operation .minibagmenu ul li {
         list-style: none;
-        padding: 10px 0;
+        padding: 8px 0; /*10px 0*/
         border-top: 1px solid #1b1b1b50;
         display: flex;
         align-items: center;
@@ -743,7 +743,7 @@ header {
         text-align: center;
         background: rgba(0, 0, 0, 0.03);
         width: 100%;
-        padding: 10px 0 10px 0;
+        padding: 8px 0 8px 0; /*10px 0 10px 0*/
         border: 2px solid rgb(230, 230, 230);
         border-radius: 6px;
         box-shadow: rgb(204 219 232) 3px 3px 6px 0px inset, rgb(255 255 255 / 50%) -3px -3px 6px 1px inset;
